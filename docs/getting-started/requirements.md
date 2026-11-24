@@ -3,8 +3,9 @@
 - [ ] **A connected car.** A Jaguar or Land Rover with an active connected-services subscription (InControl or JLR
       Remote). If the JLR app shows your car's battery and location, it's connected.
 - [ ] **You're the primary user.** The Data Hub only lists cars where your JLR account is the primary user.
-- [ ] **A JLR Data Hub account.** Sign in to the portal with the same JLR account you use in the JLR app. There's a
-      link from [developer.jlr.com](https://developer.jlr.com/docs/guides/personas/vehicle-owners).
+- [ ] **Your JLR account**, the one you use in the JLR app. It's also your login for JLR's data portal,
+      [data.jlr.com](https://data.jlr.com/en_xi/index.html) (**Access your data** → **Private**). There's nothing else to
+      sign up for.
 - [ ] **Home Assistant 2026.2 or newer**, with [HACS](https://hacs.xyz) to install from. You can also copy the files in
       by hand.
 - [ ] **Your VIN**, the 17-character vehicle identification number. It's in the JLR app, on your V5C (logbook), and at
@@ -12,8 +13,9 @@
 
 ## Where it works
 
-The Data Hub was set up for the EU Data Act. It also works for UK cars: it was built and tested on a UK I-Pace. If the
-portal doesn't list your car, it isn't available for that car or account yet.
+JLR's data portal covers JLR vehicles first sold in the **EU** (under the EU Data Act) and, on a goodwill basis, the
+**UK**. This integration was built and tested on a UK I-Pace. The portal is still in beta: if it doesn't list your
+car, it isn't available for that car or account yet.
 
 ## One credential per account
 

@@ -47,7 +47,9 @@ runs for the EU Data Act, so there's no scraping and no shared app login.
 ## What you need
 
 - A Jaguar or Land Rover with connected services (InControl / JLR Remote), where you're the primary user.
-- An account on the JLR Data Hub portal. It's free.
+- Your JLR account, which also signs you in to JLR's data portal, [data.jlr.com](https://data.jlr.com/en_xi/index.html).
+  It's free.
+- A car first sold in the EU or the UK.
 - Home Assistant 2026.2 or newer, ideally with [HACS](https://hacs.xyz).
 
 Tested with a UK 2020 Jaguar I-Pace. Any car the Data Hub lists for you should work.

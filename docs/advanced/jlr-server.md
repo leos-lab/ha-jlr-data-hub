@@ -84,9 +84,11 @@ Every call needs your token. In these examples `$T` is your `API_TOKEN` and `$S`
     curl -s -H "Authorization: Bearer $T" $S/api/certificate > jlr.pem
     ```
 
-2. **Create the credential in the JLR portal** with `jlr.pem`, exactly as in
-   [Create your JLR credential](../getting-started/jlr-credential.md): delete any existing one, choose device-based,
-   your car, every category. Also make a stream configuration with every signal.
+2. **Create the credential in JLR's data portal** with `jlr.pem`, exactly as in
+   [Create your JLR credential](../getting-started/jlr-credential.md): [data.jlr.com](https://data.jlr.com/en_xi/index.html)
+   → **Access your data** → **Private** → sign in → **Data Access Credentials**. Delete any existing one, then
+   **Create Access Credential**: device-based, your car, every category. Also make a stream configuration with every
+   signal.
 
 3. **Tell the server about it**:
 

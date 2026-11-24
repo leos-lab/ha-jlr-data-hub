@@ -13,8 +13,8 @@ analytics and no telemetry.
 | JLR tokens | the same folder. Renewed automatically |
 | Car data | Home Assistant's own database, like any other integration |
 
-Removing the integration deletes the key and tokens. Delete the credential in the JLR portal too, so it can't be used
-again.
+Removing the integration deletes the key and tokens. Delete the credential in JLR's data portal too
+(**Data Access Credentials** on [My data](https://data.jlr.com/en_xi/my-data.html)), so it can't be used again.
 
 ## Keep in mind
 

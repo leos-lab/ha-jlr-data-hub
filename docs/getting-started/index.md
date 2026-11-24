@@ -1,6 +1,6 @@
 # Getting started
 
-About 15 minutes, most of it in JLR's portal.
+About 15 minutes, most of it in JLR's data portal, [data.jlr.com](https://data.jlr.com/en_xi/index.html).
 
 ```mermaid
 flowchart LR

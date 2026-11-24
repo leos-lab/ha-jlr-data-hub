@@ -159,7 +159,7 @@ class JLRConfigFlow(ConfigFlow, domain=DOMAIN):
             vol.Optional(CONF_ACCOUNT_ID): str,
         })
         # hassfest wants links passed in as placeholders, not written into strings.json.
-        placeholders["portal_url"] = "https://developer.jlr.com"
+        placeholders["portal_url"] = "https://data.jlr.com/en_xi/index.html"
         return self.async_show_form(step_id="direct", data_schema=self.add_suggested_values_to_schema(schema, user_input),
                                     errors=errors, description_placeholders=placeholders)
 

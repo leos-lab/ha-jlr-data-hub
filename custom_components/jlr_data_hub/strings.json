@@ -23,7 +23,7 @@
       },
       "direct": {
         "title": "Connect directly to JLR",
-        "description": "1. In the [JLR Data Hub portal]({portal_url}), delete any existing credential (only one is allowed), then create one: device-based, your car, every category, uploading this certificate (save it as `jlr.pem`):\n\n```\n{certificate}\n```\n\n2. To stream, also create a stream configuration with every signal and note its username.\n3. Enter the client ID and VIN below, then sign in with your JLR account. {error}",
+        "description": "1. In [JLR's data portal]({portal_url}), choose Access your data → Private and sign in with your JLR account. Under Data Access Credentials, delete any existing credential (only one is allowed), then choose Create Access Credential: device-based, your car, every category, uploading this certificate (save it as `jlr.pem`):\n\n```\n{certificate}\n```\n\n2. To stream, also create a stream configuration with every signal and note its username.\n3. Enter the client ID and VIN below, then sign in with your JLR account. {error}",
         "data": {
           "client_id": "Client ID",
           "vin": "VIN",

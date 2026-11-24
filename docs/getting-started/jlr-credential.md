@@ -17,16 +17,24 @@ MIIDXTCCAhGgAwIBAgIU…
 Copy all of it, including the `BEGIN` and `END` lines, into a text file called `jlr.pem`. Leave the Home Assistant
 tab open: you'll come back to it.
 
-## Create the credential in the portal
+## Open the JLR data portal
 
-1. Sign in to the JLR Data Hub customer portal (linked from
-   [developer.jlr.com](https://developer.jlr.com/docs/guides/personas/vehicle-owners)).
-2. **Delete any credential you already have.** Only one is allowed per account.
+1. Go to **[data.jlr.com](https://data.jlr.com/en_xi/index.html)**, JLR's data portal (currently in beta).
+2. Choose **Access your data** → **Private**.
+3. Sign in with your **JLR account**, the same one you use in the JLR app.
+4. The first time, JLR asks a few questions to confirm your link to the car (you own it, lease it, or use its
+   services). Answer them.
+5. You land on **[My data](https://data.jlr.com/en_xi/my-data.html)**. The section you want is **Data Access
+   Credentials** ("Set up and manage your Data access credentials").
+
+## Create the credential
+
+1. Under **Data Access Credentials**, **delete any credential you already have**. Only one is allowed per account.
 
     !!! warning
         If something else uses that credential (another app, or a jlr-server), it stops working.
 
-3. Create a new credential:
+2. Choose **Create Access Credential**, and fill it in:
 
     | Setting | Choose |
     |---|---|
@@ -35,7 +43,7 @@ tab open: you'll come back to it.
     | Data categories | **all of them** (Status, EV, Position, Journeys, and Attributes and Diagnostics if listed) |
     | Public certificate | upload `jlr.pem` |
 
-4. Note the **client ID** the portal shows.
+3. Note the **client ID** the portal shows for the new credential.
 
 ## Set up live updates (recommended)
 
