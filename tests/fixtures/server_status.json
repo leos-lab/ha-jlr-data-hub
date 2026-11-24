@@ -1,0 +1,39 @@
+{
+ "configured": true,
+ "config": {
+  "clientId": "client-123",
+  "vin": "SADHA2B10L1000001",
+  "streamUsername": "stream-user",
+  "accountId": "acc-1"
+ },
+ "signedIn": true,
+ "sessionExpiresAt": null,
+ "stream": {
+  "state": "live",
+  "detail": null,
+  "since": "2026-11-24T22:08:28Z",
+  "topics": [
+   "attributes",
+   "diagnostics",
+   "ev",
+   "journeys",
+   "position",
+   "status"
+  ],
+  "messages": 0,
+  "last_message_at": null,
+  "connections": 2,
+  "last_connection_seconds": 20
+ },
+ "lastSnapshot": "2026-11-24T22:08:29Z",
+ "lastJourneys": "2026-11-24T22:08:19Z",
+ "lastError": null,
+ "rateLimit": {
+  "Limit": null,
+  "Remaining": null,
+  "Reset": null
+ },
+ "signin": {
+  "state": "done"
+ }
+}

@@ -1,0 +1,582 @@
+{
+ "signals": [
+  {
+   "name": "Vehicle.Body.Convertible.IsOpen",
+   "value": "FALSE",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Body.Door.Lock.Status",
+   "value": "TRUE",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Body.Hood.IsLocked",
+   "value": "LOCKED",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Body.Hood.IsOpen",
+   "value": "CLOSED",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Body.Lights.Beam.Low.IsOn",
+   "value": "UNKNOWN",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Body.Roof.IsOpen",
+   "value": "FALSE",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Body.Security.Alarm.Mode",
+   "value": "ALARM_ARMED",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Body.Security.IsEngineBlocked",
+   "value": "NORMAL_UNBLOCKED",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Body.Security.IsPanicAlarmTriggered",
+   "value": "UNKNOWN",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Body.Trunk.Rear.IsLocked",
+   "value": "TRUE",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Body.Trunk.Rear.IsOpen",
+   "value": "CLOSED",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Body.Windshield.Front.WasherFluid.IsLevelLow",
+   "value": "LOW",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.Door.Row1.DriverSide.IsLocked",
+   "value": "LOCKED",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.Door.Row1.DriverSide.IsOpen",
+   "value": "CLOSED",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.Door.Row1.DriverSide.Window.Position",
+   "value": "CLOSED",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.Door.Row1.PassengerSide.IsLocked",
+   "value": "LOCKED",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.Door.Row1.PassengerSide.IsOpen",
+   "value": "CLOSED",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.Door.Row1.PassengerSide.Window.Position",
+   "value": "CLOSED",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.Door.Row2.DriverSide.IsLocked",
+   "value": "LOCKED",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.Door.Row2.DriverSide.IsOpen",
+   "value": "CLOSED",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.Door.Row2.DriverSide.Window.Position",
+   "value": "CLOSED",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.Door.Row2.PassengerSide.IsLocked",
+   "value": "LOCKED",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.Door.Row2.PassengerSide.IsOpen",
+   "value": "CLOSED",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.Door.Row2.PassengerSide.Window.Position",
+   "value": "CLOSED",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.HVAC.AirConditioning.FuelFiredHeater.Setting",
+   "value": "DISABLED",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.HVAC.AirConditioning.FuelFiredHeater.TimeRemaining",
+   "value": "0",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.HVAC.AirConditioning.Mode",
+   "value": "INACTIVE",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.HVAC.AirConditioning.PrioritySetting",
+   "value": "PRIORITIZE_RANGE",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.HVAC.AirConditioning.Status",
+   "value": "OFF",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.HVAC.AirConditioning.TimeRemaining",
+   "value": "0",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.HVAC.AirConditioning.VentingTime",
+   "value": "30",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.HVAC.Schedule.IsActive",
+   "value": "FALSE",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.HVAC.Schedule.Primary.Day",
+   "value": "0",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.HVAC.Schedule.Primary.Hour",
+   "value": "0",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.HVAC.Schedule.Primary.Minute",
+   "value": "0",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.HVAC.Schedule.Primary.Month",
+   "value": "0",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.HVAC.Schedule.Secondary.Day",
+   "value": "0",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.HVAC.Schedule.Secondary.Hour",
+   "value": "0",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.HVAC.Schedule.Secondary.Minute",
+   "value": "0",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Cabin.HVAC.Schedule.Secondary.Month",
+   "value": "0",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Chassis.Axle.Row1.Wheel.Left.Tire.IsPressureLow",
+   "value": "NORMAL",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Chassis.Axle.Row1.Wheel.Left.Tire.Pressure",
+   "value": "243",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Chassis.Axle.Row1.Wheel.Right.Tire.IsPressureLow",
+   "value": "NORMAL",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Chassis.Axle.Row1.Wheel.Right.Tire.Pressure",
+   "value": "237",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Chassis.Axle.Row2.Wheel.Left.Tire.IsPressureLow",
+   "value": "NORMAL",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Chassis.Axle.Row2.Wheel.Left.Tire.Pressure",
+   "value": "233",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Chassis.Axle.Row2.Wheel.Right.Tire.IsPressureLow",
+   "value": "NORMAL",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Chassis.Axle.Row2.Wheel.Right.Tire.Pressure",
+   "value": "233",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Chassis.Brake.FluidLevel.IsLevelLow",
+   "value": "NORMAL",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.CurrentLocation.Latitude",
+   "value": "51.5007",
+   "unit": null,
+   "timestamp": "2026-11-23T20:05:15Z"
+  },
+  {
+   "name": "Vehicle.CurrentLocation.Longitude",
+   "value": "-0.1246",
+   "unit": null,
+   "timestamp": "2026-11-23T20:05:15Z"
+  },
+  {
+   "name": "Vehicle.LowVoltageBattery.CurrentVoltage",
+   "value": "14.1",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.LowVoltageBattery.IsBatteryLow",
+   "value": "BATTERY_1_1",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.CombustionEngine.EngineCoolant.IsLevelLow",
+   "value": "NORMAL",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.CombustionEngine.EngineCoolant.Temperature",
+   "value": "-60",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.CombustionEngine.EngineOil.IsLevelLow",
+   "value": "NORMAL",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.FuelSystem.Range",
+   "value": "0",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.FuelSystem.RelativeLevel",
+   "value": "0",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.Range",
+   "value": "-1",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.BatteryConditioning.IsActive",
+   "value": "OFF",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.Charging.ChargeLimit",
+   "value": "-1",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.Charging.ChargeLimitSetting.OneOffMode",
+   "value": "CLEAR",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.Charging.ChargeLimitSetting.OneOffValue",
+   "value": "-1",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.Charging.ChargeLimitSetting.PermanentMode",
+   "value": "CLEAR",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.Charging.ChargeNowSetting",
+   "value": "FORCE_ON",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.Charging.ChargeRate",
+   "value": "36",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.Charging.ChargingModeChoice",
+   "value": "TIMEDCHARGINGNOTACTIVE",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.Charging.Session.Energy",
+   "value": "47",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.Charging.StateOfChargeRate",
+   "value": "-1",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.Charging.Status",
+   "value": "FULLYCHARGED",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.Charging.TimeToBulkCharged",
+   "value": "107",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.Charging.TimeToComplete",
+   "value": "107",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.Range",
+   "value": "334",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.RangeEstimation.Consumption.Ascent",
+   "value": "70",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.RangeEstimation.Consumption.Descent",
+   "value": "50",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.RangeEstimation.Consumption.SpeedBracket.SB1",
+   "value": "178",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.RangeEstimation.Consumption.SpeedBracket.SB2",
+   "value": "160",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.RangeEstimation.Consumption.SpeedBracket.SB3",
+   "value": "124",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.RangeEstimation.Consumption.SpeedBracket.SB4",
+   "value": "190",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.RangeEstimation.Consumption.SpeedBracket.SB5",
+   "value": "298",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.RangeEstimation.Consumption.SpeedBracket.SB6",
+   "value": "400",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.RangeEstimation.Consumption.SpeedBracket.SB7",
+   "value": "652",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.RangeEstimation.Consumption.Stationary",
+   "value": "15",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.RangeEstimation.UsableEnergy.Initial",
+   "value": "10235",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.RangeEstimation.UsableEnergy.Regenerative",
+   "value": "0",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.RangeEstimation.UsableEnergy.Revised",
+   "value": "7230",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Powertrain.TractionBattery.StateOfCharge.Displayed",
+   "value": "90",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Schedule.Departure.Day",
+   "value": "1",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Schedule.Departure.Hour",
+   "value": "0",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Schedule.Departure.IsSet",
+   "value": "true",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Schedule.Departure.Minute",
+   "value": "0",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Schedule.Departure.Month",
+   "value": "1",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Schedule.Departure.Year",
+   "value": "2000",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.Service.DistanceToService",
+   "value": "9800",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.System.DriveCycle.Status",
+   "value": "KEY_REMOVED",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  },
+  {
+   "name": "Vehicle.TraveledDistance",
+   "value": "54321000",
+   "unit": null,
+   "timestamp": "2026-11-24T21:39:47Z"
+  }
+ ],
+ "receivedAt": "2026-11-24T22:08:18Z",
+ "reportedAt": "2026-11-24T21:39:47Z"
+}

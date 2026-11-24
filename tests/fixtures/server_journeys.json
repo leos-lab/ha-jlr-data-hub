@@ -1,0 +1,73 @@
+{
+ "items": [
+  {
+   "journeyId": "80228119",
+   "startTime": "2026-11-23T19:28:26Z",
+   "endTime": "2026-11-23T20:05:14Z",
+   "duration": 2208,
+   "distance": {
+    "value": 31.06,
+    "unit": "km"
+   },
+   "averageSpeed": {
+    "value": 50.64,
+    "unit": "km/h"
+   },
+   "startLocation": {
+    "latitude": 51.5,
+    "longitude": -0.12
+   },
+   "endLocation": {
+    "latitude": 51.5,
+    "longitude": -0.12
+   },
+   "socStart": 80,
+   "socEnd": 74,
+   "socUsed": 6
+  },
+  {
+   "journeyId": "78744784",
+   "startTime": "2026-11-23T08:26:34Z",
+   "endTime": "2026-11-23T09:11:41Z",
+   "duration": 2707,
+   "distance": {
+    "value": 32.35,
+    "unit": "km"
+   },
+   "averageSpeed": {
+    "value": 43.02,
+    "unit": "km/h"
+   },
+   "startLocation": {
+    "latitude": 51.51,
+    "longitude": -0.13
+   },
+   "endLocation": {
+    "latitude": 51.51,
+    "longitude": -0.13
+   }
+  },
+  {
+   "journeyId": "75966744",
+   "startTime": "2026-11-21T17:51:34Z",
+   "endTime": "2026-11-21T18:07:20Z",
+   "duration": 946,
+   "distance": {
+    "value": 7.89,
+    "unit": "km"
+   },
+   "averageSpeed": {
+    "value": 30.03,
+    "unit": "km/h"
+   },
+   "startLocation": {
+    "latitude": 51.52,
+    "longitude": -0.13999999999999999
+   },
+   "endLocation": {
+    "latitude": 51.52,
+    "longitude": -0.13999999999999999
+   }
+  }
+ ]
+}

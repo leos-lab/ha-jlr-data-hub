@@ -1,0 +1,205 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "JLR Data Hub",
+        "description": "JLR allows one Data Hub credential per account. If a jlr-server already holds yours, read from it. Otherwise this Home Assistant can hold its own.",
+        "menu_options": {
+          "server": "Read from my jlr-server",
+          "direct": "Connect directly to JLR"
+        }
+      },
+      "server": {
+        "title": "Read from jlr-server",
+        "description": "The server holds the JLR credential, stays on the live stream and keeps history, so trips include the battery they used.",
+        "data": {
+          "url": "Server address",
+          "token": "API token"
+        },
+        "data_description": {
+          "url": "For example http://192.168.1.10:9293",
+          "token": "API_TOKEN from the server's .env file"
+        }
+      },
+      "direct": {
+        "title": "Connect directly to JLR",
+        "description": "1. In the [JLR Data Hub portal](https://developer.jlr.com), delete any existing credential (only one is allowed), then create one: device-based, your car, every category, uploading this certificate (save it as `jlr.pem`):\n\n```\n{certificate}\n```\n\n2. To stream, also create a stream configuration with every signal and note its username.\n3. Enter the client ID and VIN below, then sign in with your JLR account. {error}",
+        "data": {
+          "client_id": "Client ID",
+          "vin": "VIN",
+          "stream_username": "Stream username",
+          "account_id": "Stream account ID"
+        },
+        "data_description": {
+          "client_id": "From the credential you created in the portal",
+          "stream_username": "Optional. Without it, data is polled every 10 minutes instead of streamed.",
+          "account_id": "Optional. Read from JLR after sign-in when left blank."
+        }
+      },
+      "reauth_direct": {
+        "title": "Sign in to JLR again",
+        "description": "The JLR sign-in has lapsed. Sign in again with the same credential. {error}"
+      },
+      "reauth_server": {
+        "title": "New jlr-server token",
+        "description": "{url} refused the API token. Enter the current one.",
+        "data": {
+          "token": "API token"
+        }
+      }
+    },
+    "progress": {
+      "signin": "Open [{url}]({url}), sign in with your JLR account and approve code **{code}**. This page continues once you've approved it."
+    },
+    "error": {
+      "cannot_connect": "Couldn't reach the server.",
+      "invalid_auth": "The server refused the token.",
+      "server_not_configured": "The server isn't set up with a JLR credential and car yet.",
+      "invalid_vin": "A VIN is 17 characters.",
+      "signin_start": "JLR refused the sign-in. Check the client ID.",
+      "wrong_vehicle": "That server reads a different car."
+    },
+    "abort": {
+      "already_configured": "This car is already set up.",
+      "signin_failed": "Sign-in didn't finish: {error}",
+      "reauth_successful": "Signed in again."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "JLR Data Hub options",
+        "data": {
+          "scan_interval": "Read the server every",
+          "stream_username": "Stream username",
+          "account_id": "Stream account ID"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "battery": {
+        "name": "Battery"
+      },
+      "range": {
+        "name": "Range"
+      },
+      "charging_state": {
+        "name": "Charging state",
+        "state": {
+          "charging": "Charging",
+          "complete": "Complete",
+          "plugged_in": "Plugged in",
+          "unplugged": "Unplugged",
+          "fault": "Fault"
+        }
+      },
+      "charge_limit": {
+        "name": "Charge limit"
+      },
+      "time_to_full": {
+        "name": "Time to full"
+      },
+      "charge_session_energy": {
+        "name": "Charge session energy"
+      },
+      "tyre_pressure_front_left": {
+        "name": "Tyre pressure front left"
+      },
+      "tyre_pressure_front_right": {
+        "name": "Tyre pressure front right"
+      },
+      "tyre_pressure_rear_left": {
+        "name": "Tyre pressure rear left"
+      },
+      "tyre_pressure_rear_right": {
+        "name": "Tyre pressure rear right"
+      },
+      "lv_battery_voltage": {
+        "name": "12 V battery"
+      },
+      "lv_battery_level": {
+        "name": "12 V battery level"
+      },
+      "odometer": {
+        "name": "Odometer"
+      },
+      "service_distance": {
+        "name": "Distance to service"
+      },
+      "last_trip": {
+        "name": "Last trip"
+      },
+      "last_reported": {
+        "name": "Last reported"
+      },
+      "stream": {
+        "name": "Stream",
+        "state": {
+          "off": "Off",
+          "connecting": "Connecting",
+          "live": "Live",
+          "waiting": "Waiting to reconnect",
+          "dropped": "Dropped",
+          "error": "Error"
+        }
+      }
+    },
+    "binary_sensor": {
+      "plugged_in": {
+        "name": "Plugged in"
+      },
+      "charging": {
+        "name": "Charging"
+      },
+      "lock": {
+        "name": "Lock"
+      },
+      "door_front_left": {
+        "name": "Door front left"
+      },
+      "door_front_right": {
+        "name": "Door front right"
+      },
+      "door_rear_left": {
+        "name": "Door rear left"
+      },
+      "door_rear_right": {
+        "name": "Door rear right"
+      },
+      "window_front_left": {
+        "name": "Window front left"
+      },
+      "window_front_right": {
+        "name": "Window front right"
+      },
+      "window_rear_left": {
+        "name": "Window rear left"
+      },
+      "window_rear_right": {
+        "name": "Window rear right"
+      },
+      "boot": {
+        "name": "Boot"
+      },
+      "bonnet": {
+        "name": "Bonnet"
+      },
+      "tyre_warning": {
+        "name": "Tyre pressure warning"
+      },
+      "washer_fluid_low": {
+        "name": "Washer fluid low"
+      },
+      "signed_in": {
+        "name": "JLR sign-in"
+      }
+    },
+    "device_tracker": {
+      "location": {
+        "name": "Location"
+      }
+    }
+  }
+}
