@@ -1,0 +1,88 @@
+site_name: JLR Data Hub for Home Assistant
+site_description: Your Jaguar or Land Rover's battery, charging, locks, tyres, location and trips in Home Assistant, through JLR's official owner data API.
+site_url: https://leos-lab.github.io/ha-jlr-data-hub/
+repo_url: https://github.com/leos-lab/ha-jlr-data-hub
+repo_name: leos-lab/ha-jlr-data-hub
+edit_uri: edit/main/docs/
+copyright: MIT licence · Not affiliated with or endorsed by Jaguar Land Rover
+
+theme:
+  name: material
+  icon:
+    logo: material/car-electric
+    repo: fontawesome/brands/github
+  favicon: assets/favicon.svg
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+    - toc.follow
+    - content.code.copy
+    - content.tabs.link
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - def_list
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.keys
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Home: index.md
+  - Getting started:
+      - getting-started/index.md
+      - Before you start: getting-started/requirements.md
+      - 1. Install the integration: getting-started/install.md
+      - 2. Create your JLR credential: getting-started/jlr-credential.md
+      - 3. Connect Home Assistant: getting-started/connect.md
+  - Using it:
+      - Entities: using/entities.md
+      - How fresh is the data?: using/freshness.md
+      - Automation ideas: using/automations.md
+  - How it works: how-it-works.md
+  - Advanced:
+      - advanced/index.md
+      - jlr-server (proxy): advanced/jlr-server.md
+      - jlr-server API: advanced/api.md
+  - Help:
+      - Troubleshooting: help/troubleshooting.md
+      - FAQ: help/faq.md
+      - Privacy and security: help/privacy.md

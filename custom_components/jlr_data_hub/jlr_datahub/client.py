@@ -96,7 +96,7 @@ class DeviceAuthorization:
 class JLRClient:
     """Keys, config and tokens live in `data_dir` (0600 files)."""
 
-    def __init__(self, data_dir: Path, user_agent: str = "jlr-datahub-server", certificate_name: str = "JLR server (N100)"):
+    def __init__(self, data_dir: Path, user_agent: str = "jlr-datahub-server", certificate_name: str = "jlr-server"):
         self.dir = data_dir
         self.certificate_name = certificate_name
         self.dir.mkdir(parents=True, exist_ok=True)

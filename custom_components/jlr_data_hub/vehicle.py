@@ -1,6 +1,6 @@
 """The car's latest signals and typed readings, independent of where the signals came from.
 
-Ported from Packages/JLRDataHub/VehicleState+Accessors.swift in Utils-ios. Real cars send every value as a string
+Real cars send every value as a string
 ("90", "CLOSED", "LOCKED"), use the catalogue's paths, leave units out, and send -1 for "not set". The REST schema
 and the catalogue disagree on a few paths and units, so each reading tries both.
 """

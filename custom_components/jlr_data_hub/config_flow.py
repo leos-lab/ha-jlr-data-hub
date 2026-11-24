@@ -86,7 +86,7 @@ class JLRConfigFlow(ConfigFlow, domain=DOMAIN):
         return JLROptionsFlow()
 
     async def async_step_user(self, user_input: dict[str, Any] | None = None) -> ConfigFlowResult:
-        return self.async_show_menu(step_id="user", menu_options=[MODE_SERVER, MODE_DIRECT])
+        return self.async_show_menu(step_id="user", menu_options=[MODE_DIRECT, MODE_SERVER])
 
     # MARK: Via jlr-server
 

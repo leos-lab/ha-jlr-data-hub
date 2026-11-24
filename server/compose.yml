@@ -1,0 +1,42 @@
+# jlr-server and its Postgres. From the repository root:
+#   cp server/.env.example server/.env   # then fill in API_TOKEN and POSTGRES_PASSWORD
+#   docker compose -f server/compose.yml up -d --build
+# Docs: https://leos-lab.github.io/ha-jlr-data-hub/advanced/jlr-server/
+name: jlr
+
+services:
+  server:
+    build:
+      context: ..
+      dockerfile: server/Dockerfile
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql://jlr:${POSTGRES_PASSWORD}@db:5432/jlr
+      POLL_SECONDS: "600"
+      JOURNEY_SECONDS: "1800"
+    ports:
+      - "9293:8080"
+    volumes:
+      - jlr-keys:/data          # the JLR keys and sign-in; back this up and keep it private
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: jlr
+      POSTGRES_DB: jlr
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - jlr-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U jlr"]
+      interval: 10s
+      retries: 6
+
+volumes:
+  jlr-keys:
+  jlr-db:

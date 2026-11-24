@@ -3,10 +3,10 @@
     "step": {
       "user": {
         "title": "JLR Data Hub",
-        "description": "JLR allows one Data Hub credential per account. If a jlr-server already holds yours, read from it. Otherwise this Home Assistant can hold its own.",
+        "description": "JLR allows one Data Hub credential per account. Most people connect directly, so this Home Assistant holds it. Only choose jlr-server if you already run one to share a single credential between several clients.",
         "menu_options": {
-          "server": "Read from my jlr-server",
-          "direct": "Connect directly to JLR"
+          "direct": "Connect directly to JLR (recommended)",
+          "server": "Read from a jlr-server (advanced)"
         }
       },
       "server": {
