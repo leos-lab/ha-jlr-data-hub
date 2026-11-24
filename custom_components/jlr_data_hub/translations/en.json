@@ -17,13 +17,13 @@
           "token": "API token"
         },
         "data_description": {
-          "url": "For example http://192.168.1.10:9293",
+          "url": "The full server address, starting with http or https, with the port if it has one (jlr-server uses 9293).",
           "token": "API_TOKEN from the server's .env file"
         }
       },
       "direct": {
         "title": "Connect directly to JLR",
-        "description": "1. In the [JLR Data Hub portal](https://developer.jlr.com), delete any existing credential (only one is allowed), then create one: device-based, your car, every category, uploading this certificate (save it as `jlr.pem`):\n\n```\n{certificate}\n```\n\n2. To stream, also create a stream configuration with every signal and note its username.\n3. Enter the client ID and VIN below, then sign in with your JLR account. {error}",
+        "description": "1. In the [JLR Data Hub portal]({portal_url}), delete any existing credential (only one is allowed), then create one: device-based, your car, every category, uploading this certificate (save it as `jlr.pem`):\n\n```\n{certificate}\n```\n\n2. To stream, also create a stream configuration with every signal and note its username.\n3. Enter the client ID and VIN below, then sign in with your JLR account. {error}",
         "data": {
           "client_id": "Client ID",
           "vin": "VIN",
