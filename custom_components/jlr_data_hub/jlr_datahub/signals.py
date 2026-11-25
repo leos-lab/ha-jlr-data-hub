@@ -2,6 +2,9 @@
 
 Accepts the nested VSS shape the REST API sends, {name, value, unit, timestamp} objects, and what the stream really
 sends: arrays of {vssIdentifier, signalValue, signalTimestamp (epoch milliseconds, as a string), unit}.
+
+The stream repeats some signals within one message: first in metric, then in the car's display units, both
+labelled the same (range 331 then 205, both "km"; odometer in metres, then in miles). The first copy wins.
 """
 from __future__ import annotations
 
@@ -49,7 +52,8 @@ def parse_signals(payload: Any) -> list[dict]:
             out.append({"name": path, "value": node, "unit": None, "timestamp": ts})
 
     walk(payload, "", fallback)
-    return out
+    seen: set[str] = set()
+    return [s for s in out if not (s["name"] in seen or seen.add(s["name"]))]
 
 
 SOC = ("Vehicle.Powertrain.TractionBattery.StateOfCharge.Displayed",

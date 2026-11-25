@@ -73,3 +73,8 @@ def test_parses_real_stream_messages():
         {"name": "Vehicle.Powertrain.TractionBattery.Range", "value": "334", "unit": "km", "timestamp": 1795622756.215},
         {"name": "Vehicle.Body.Lights.Beam.Low.IsOn", "value": "UNKNOWN", "unit": None, "timestamp": 1795622756.215},
     ]
+
+    # It repeats some signals in the car's display units, labelled the same; the first (metric) copy wins.
+    twice = [{"vssIdentifier": "Vehicle.Powertrain.TractionBattery.Range", "signalValue": v,
+              "signalTimestamp": "1795624498447", "unit": "km"} for v in ("331", "205")]
+    assert [s["value"] for s in parse_signals(twice)] == ["331"]
