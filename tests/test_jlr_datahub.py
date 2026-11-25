@@ -59,3 +59,17 @@ def test_parses_both_payload_shapes():
     flat = {"name": "Vehicle.Body.Door.Lock.Status", "value": "TRUE", "unit": "none",
             "timestamp": "2026-11-24T21:30:00.000Z"}
     assert parse_signals(flat)[0]["unit"] is None
+
+
+
+def test_parses_real_stream_messages():
+    # What the stream really sends (captured from an I-Pace, 25 Nov 2026): not the documented {name, value}.
+    streamed = [{"vssIdentifier": "Vehicle.Powertrain.TractionBattery.Range", "signalValue": "334",
+                 "signalTimestamp": "1795622756215", "signalName": "Powertrain.TractionBattery.Range",
+                 "dataType": "int32", "unit": "km", "description": "Remaining range in Kilometres"},
+                {"vssIdentifier": "Vehicle.Body.Lights.Beam.Low.IsOn", "signalValue": "UNKNOWN",
+                 "signalTimestamp": "1795622756215", "unit": "none"}]
+    assert parse_signals(streamed) == [
+        {"name": "Vehicle.Powertrain.TractionBattery.Range", "value": "334", "unit": "km", "timestamp": 1795622756.215},
+        {"name": "Vehicle.Body.Lights.Beam.Low.IsOn", "value": "UNKNOWN", "unit": None, "timestamp": 1795622756.215},
+    ]

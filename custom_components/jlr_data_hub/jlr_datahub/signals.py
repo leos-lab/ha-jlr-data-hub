@@ -1,6 +1,7 @@
 """Turns any Data Hub payload into flat signals: {"name": VSS path, "value", "unit", "timestamp": epoch seconds}.
 
-Accepts the nested VSS shape the REST API sends and the {name, value, unit, timestamp} objects the stream sends.
+Accepts the nested VSS shape the REST API sends, {name, value, unit, timestamp} objects, and what the stream really
+sends: arrays of {vssIdentifier, signalValue, signalTimestamp (epoch milliseconds, as a string), unit}.
 """
 from __future__ import annotations
 
@@ -9,6 +10,10 @@ from typing import Any
 
 
 def parse_time(value: Any) -> float | None:
+    """ISO 8601, or epoch seconds or milliseconds (a number or a string of digits)."""
+    if isinstance(value, (int, float)) and not isinstance(value, bool) or isinstance(value, str) and value.isdigit():
+        n = float(value)
+        return n / 1000 if n > 1e11 else n
     if not isinstance(value, str):
         return None
     try:
@@ -24,12 +29,13 @@ def parse_signals(payload: Any) -> list[dict]:
     def walk(node: Any, path: str, ts: float | None) -> None:
         if isinstance(node, dict):
             name = node.get("name") or node.get("vssIdentifier")
-            if isinstance(name, str) and name.startswith("Vehicle") and "value" in node:
-                if isinstance(node["value"], (str, int, float, bool)):
+            key = "value" if "value" in node else "signalValue"
+            if isinstance(name, str) and name.startswith("Vehicle") and key in node:
+                if isinstance(node[key], (str, int, float, bool)):
                     unit = node.get("unit")
-                    out.append({"name": name, "value": node["value"],
+                    out.append({"name": name, "value": node[key],
                                 "unit": None if unit in (None, "none") else unit,
-                                "timestamp": parse_time(node.get("timestamp")) or ts})
+                                "timestamp": parse_time(node.get("timestamp", node.get("signalTimestamp"))) or ts})
                 return
             own = parse_time(node.get("Timestamp")) or ts
             for key, child in node.items():
